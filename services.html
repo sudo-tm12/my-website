@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Link to an external CSS file for contact icons -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tshedza.</a>
+        <nav class="NavBar">
+            <a href="Tshedza.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="introSec">
+        <h1>Our Services</h1>
+        <p>At Tshedza, we offer a range of web development services tailored to your needs. From designing stunning websites to implementing complex web applications, we have you covered.</p>
+    </section>
+
+    <section class="content">
+        <div class="vidSec">
+            <div class="video-container">
+                <video id="myVideo" width="560" height="315" muted loop poster="poster.jpg">
+                    <source src="vid2.mp4" type="video/mp4">
+                    <source src="vid2.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <section class="ctaSec hidden">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your project? Contact us today for a free consultation!</p>
+            <a href="contact.html" class="ctaButton"><span>Contact Us</span></a>
+        </section>
+    </section>
+    
+    <section class="servicesSec">
+        <h2>What We Offer</h2>
+        <div class="service">
+            <img src="web-design-icon.png" alt="Web Design Icon">
+            <h3>Web Design</h3>
+            <p>Creating visually appealing and user-friendly websites to engage your audience.</p>
+        </div>
+        <div class="service">
+            <img src="web-dev-icon.png" alt="Web Development Icon">
+            <h3>Web Development</h3>
+            <p>Building robust and scalable web applications tailored to your business needs.</p>
+        </div>
+        <div class="service">
+            <img src="seo-icon.png" alt="SEO Icon">
+            <h3>SEO Optimization</h3>
+            <p>Improving your website’s visibility on search engines to attract more visitors.</p>
+        </div>
+    </section>
+    
+    <section class="testimonialsSec">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Tshedza transformed my online presence and boosted my sales!" - Steven Khumalo </p>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and reliable service from start to finish." - Lerato sethole</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Tshedza Dzivhani. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const video = document.getElementById('myVideo');
+                video.play();
+                document.querySelector('.ctaSec').classList.remove('hidden');
+                document.querySelector('.ctaSec').classList.add('visible');
+            }, 3000); // 3000 milliseconds = 3 seconds
+
+            const header = document.querySelector('.header');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop) {
+                    // Downscroll
+                    header.classList.remove('visible-header');
+                    header.classList.add('hidden-header');
+                } else {
+                    // Upscroll
+                    header.classList.remove('hidden-header');
+                    header.classList.add('visible-header');
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+            });
+
+            // Initial state
+            header.classList.add('visible-header');
+        });
+    </script>
+</body>
+</html>

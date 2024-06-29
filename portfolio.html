@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tshedza Dzivhani</title>
+    <link rel="stylesheet" href="portfolio.css"> <!-- Link to an external CSS file for styling -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tshedza.</a>
+        <nav class="NavBar">
+            <a href="Tshedza.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="portfolio">
+        <div class="portfolio-content">
+            <h3>My Portfolio</h3>
+            <p>Explore some of the projects I've worked on, showcasing my skills in web development, design, and more. Each project reflects my dedication to quality and innovation.</p>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="ecnom.jpg" alt="Project 1">
+                    <h4>Ecommerce Website</h4>
+                    <p>This project involved creating a fully functional ecommerce website featuring a user-friendly interface, secure payment processing, and inventory management.</p>
+                </div>
+                <div class="project-item">
+                    <img src="food.jpg" alt="Project 2">
+                    <h4>Restaurant Website</h4>
+                    <p>Developed a restaurant website with an online reservation system, dynamic menu display, and responsive design.</p>
+                </div>
+                <div class="project-item">
+                    <img src="Contruction.jpg" alt="Project 3">
+                    <h4>Construction Website</h4>
+                    <p>Designed and built a construction company website that showcases services, project portfolios, and client testimonials.</p>
+                </div>
+                <div class="project-item">
+                    <img src="photog.jpg" alt="Project 4">
+                    <h4>Personal Business Website</h4>
+                    <p>Created a personal business website for a photographer.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button">
+            <a href="contact.html" class="btn">Get Yours</a>
+            <a href="contact.html" class="btn">Contact Me</a>
+        </div>
+    </section>
+   
+    <footer class="footer">
+        <p>&copy; 2024 Tshedza Dzivhani. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </footer>
+    
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                // Scroll down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+        });
+    </script>
+</body>
+</html>

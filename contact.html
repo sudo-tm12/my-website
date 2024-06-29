@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tshedza Web Developer</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Link to your external CSS file for styling -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Link to an external CSS file for contact icons -->
+</head>
+<body>
+    <header class="header">
+        <a href="Tshedza.html" class="logo">Tshedza.</a>
+        <nav class="NavBar">
+            <a href="Tshedza.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="contact">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out via my social media channels or send me an email. Let's connect and create something amazing together!</p>
+            
+            <div class="social-media">
+                <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                
+            </div>
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:tshedzawebdev@yahoo.com">tshedzawebdev@yahoo.com </a></p>
+                <p>Whatsapp: <a href="#">+27 76 363 2568</a></p>
+                <p>Phone: <a href="tel:0763632568">+27 76 363 2568</a></p>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tshedza Dzivhani. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script>// script.js
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.style.backgroundColor = '#081b29';
+        } else {
+            header.style.backgroundColor = 'transparent';
+        }
+    });
+    </script>
+</html>
