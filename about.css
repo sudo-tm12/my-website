@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    text-shadow: #00abf0 2px 1px 40px;
+    position: relative;
+    font-size: 25px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+}
+
+.NavBar {
+    display: flex;
+}
+
+.NavBar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.NavBar a:hover,
+.NavBar a.active {
+    color: #00abf0;
+}
+
+.about {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    margin-bottom: 60px;
+    max-width: 540px;
+}
+
+.about-content h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ededed;
+    position: relative;
+}
+
+.about-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2.5s ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.about-content h3 {
+    margin-left: 172px;
+    margin-top: 150px;
+    margin-top: 100px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ededed;
+}
+
+.about-content p {
+    text-align: center;
+    background-color: rgba(0, 171, 240, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 2s ease forwards;
+    animation-delay: .3s;
+}
+
+.img {
+    margin-top: 62px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 100%;
+    max-width: 345px;
+    height: auto;
+    border-radius: 16.3px;
+}
+
+.img:hover {
+    background: #081b29;
+    opacity: .8;
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background: transparent;
+    color: #00abf0;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid rgba(0, 171, 240, 0.4);
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .4s;
+    padding: 10px;
+}
+
+.btn:hover {
+    background: #081b29;
+    color: white;
+    border: 2px solid #081b29;
+    box-shadow: 0 0 5px #081b29;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: rgba(0, 171, 240, 0.5);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    color: #ededed;
+}
+
+.footer .social-media a {
+    color: #00abf0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .social-media a:hover {
+    color: #081b29;
+}
+
+span{
+    color: #00abf0;
+}
+
+@media only screen and (max-width: 414px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon on small screens */
+    }
+
+    .NavBar {
+        display: none; /* Hide the navbar by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position the navbar */
+        top: 60px; /* Below the header */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: #081b29; /* Background color */
+        z-index: 99; /* Ensure it appears above other content */
+    }
+
+    .NavBar.active {
+        display: flex; /* Show the navbar when active */
+    }
+
+    .NavBar a {
+        font-size: 16px;
+        margin: 10px 0; /* Add margin between links */
+    }
+
+    .about {
+        font-size: 1.2em;
+        padding: 0px;
+       
+    }
+
+    .about-content {
+        margin-top: 100px;
+        margin-right: 0px;
+        
+        
+       
+    }
+
+    .about-content h3 {
+        max-height:fit-content;
+        margin-left: 100px;
+        margin-right: 90px;
+        font-size: 17px;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    .about-content p {
+       
+        margin: auto;
+        max-width: 250px;
+        font-size: 0.53em;
+        background-color: #081b29;
+        
+    }
+    .btn {
+        background: transparent;
+        color: #00abf0;
+        font-size: 12px;
+        text-decoration: none;
+        border: 2px solid rgba(0, 171, 240, 0.4);
+        font-weight: bold;
+        border-radius: 30px;
+        transition: .4s;
+        padding: 6px;
+        padding-left: 16px;
+        margin-bottom: 50px;
+    }
+
+    .button { 
+       
+        height: auto;
+        margin-left: 60px;
+        margin-right: 2px;
+        margin-top: 10px;
+        margin-bottom: -60px;
+    }
+
+    .button a {
+        margin-right: 30px;
+        margin-left: -15px;
+        width: 100%;
+      
+       
+    }
+
+    .img{
+        visibility: hidden;
+        margin-right: -130px;
+        left: -137px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .img img {
+        
+        border-radius: 16.3px;
+    }
+
+    .footer {
+        margin-top: 5px;
+        background-color: rgba(0, 171, 240, 0.5);
+        text-align: center;
+        padding: 10px 0;
+    }    
+
+    .footer p {
+        color: #ededed;
+        font-size: 11px;
+    }
+    
+
+
+}
