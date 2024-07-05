@@ -313,10 +313,10 @@ body {
     }
     .home-content p {
         font-size: 10px;
-        width: 170px;
+        width: 200px;
     }
     .home-content h3 {
-        font-size: 17px;
+        font-size: 15px;
     }
     .home-content .btn-box {
         flex-direction: column;
