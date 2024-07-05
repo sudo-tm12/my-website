@@ -246,7 +246,7 @@ span{
     }
 
     .about-content {
-        margin-top: 7px;
+        margin-top: 4px;
         margin-left: 45px;
         font-size: 25px;
         
@@ -266,7 +266,7 @@ span{
     .about-content p {
        
         margin: auto;
-        max-width: 300px;
+        max-width: 320px;
         font-size: 0.6em;
         background-color: #081b29;
         
