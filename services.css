@@ -332,7 +332,7 @@ span {
 
     .introSec{
         background-color: #081b29;
-        font-size: 11px;
+        font-size: 13px;
         margin-top: 100px;
     }
     
@@ -355,9 +355,9 @@ span {
 
     .ctaSec{
         
-        margin-top: 150px;
+        margin-top: 165px;
         font-size: 8px;
-        margin-right: 30px;
+        margin-right: 90px;
     }
 
     .servicesSec{
