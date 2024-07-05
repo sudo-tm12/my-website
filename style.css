@@ -303,20 +303,20 @@ body {
         
     }
     .home-content{
-        margin-top: 100px;
+        margin-top: 60px;
 
     }
     .home-content h1 {
         
-        font-size: 20px;
+        font-size: 25px;
         width: 300px;
     }
     .home-content p {
-        font-size: 10px;
+        font-size: 14px;
         width: 150px;
     }
     .home-content h3 {
-        font-size: 14px;
+        font-size: 17px;
     }
     .home-content .btn-box {
         flex-direction: column;
@@ -340,7 +340,7 @@ body {
     }
     .img img {   
         visibility: visible;
-        max-width: 110px;
+        max-width: 140px;
     }
 
     .img {
