@@ -339,13 +339,13 @@ span {
     .vidSec{
         margin-top: 2px;
         margin-right: -250px;
-        margin-left: 60px;
+        margin-left: 70px;
         padding-left: px;
     }
 
     .video-container {
         position: relative;
-        max-width: 560px;
+        max-width: 600px;
         margin-left: 10px;
         background-color: rgba(0, 171, 240, 0.6);
         padding: 5px;
